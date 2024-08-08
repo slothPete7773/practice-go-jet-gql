@@ -8,7 +8,8 @@
     "setup:node": "npm install",
     "setup:go": "go mod download",
     "setup:docker": "docker compose up -d",
-    "db:migrate": "prisma migrate dev --schema prisma/schema.prisma"
+    "db:migrate": "prisma migrate dev --schema prisma/schema.prisma",
+    "jet:generate": "cd tools/jet_generate_db && go run main.go && rm -rf ../../app/.jet_generated/postgres/public/table/table_use_schema.go"
   },
   "author": "",
   "license": "ISC",
