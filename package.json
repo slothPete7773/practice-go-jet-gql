@@ -7,12 +7,16 @@
     "setup": "cp .env.sample .env && npm run setup:node && npm run setup:go && npm run setup:docker",
     "setup:node": "npm install",
     "setup:go": "go mod download",
-    "setup:docker": "docker compose up -d"
+    "setup:docker": "docker compose up -d",
+    "db:migrate": "prisma migrate dev --schema prisma/schema.prisma"
   },
   "author": "",
   "license": "ISC",
   "description": "",
   "devDependencies": {
     "prisma": "^5.18.0"
+  },
+  "dependencies": {
+    "@prisma/client": "^5.18.0"
   }
 }

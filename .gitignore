@@ -1,6 +1,14 @@
 # Created by https://www.toptal.com/developers/gitignore/api/linux,macos,godot,node
 # Edit at https://www.toptal.com/developers/gitignore?templates=linux,macos,godot,node
 
+### App ###
+
+# Jet generated
+app/.jet_generated/*
+
+# Docker mounted volumes
+postgres_data/*
+
 ### Godot ###
 # Godot 4+ specific ignores
 .godot/
